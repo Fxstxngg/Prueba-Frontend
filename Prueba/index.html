@@ -8,110 +8,106 @@
     <!-- Bootstrap local -->
     <link rel="stylesheet" href="bootstrap.min.css">
 
-    <!-- CSS personalizado -->
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
 
-<header class="bg-primary text-white text-center py-4">
-    <h1 class="h1_principal">Clases Particulares</h1>
-    <p class="lead">Apoyo académico personalizado para todos los niveles</p>
-</header>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
-        <span class="navbar-brand">Inicio</span>
-        <button class="navbar-toggler" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <span class="navbar-brand fw-bold text-light">Clases Particulares</span>
 
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
+                <a href="#servicios" class="nav-btn">Servicios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#metodologia">Metodología</a>
+                <a href="#metodologia" class="nav-btn">Metodología</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+                <a href="#contacto" class="nav-btn">Contacto</a>
             </li>
         </ul>
     </div>
 </nav>
 
+<header class="header">
+    <h1>Clases Particulares</h1>
+    <p>Aprende a tu ritmo con apoyo personalizado</p>
+</header>
+
 <main class="container my-5">
 
-    <!-- Sección 1 -->
-    <section id="servicios" class="mb-5">
-        <h2>Servicios Educativos</h2>
+    <section id="servicios">
+        <h2 class="mb-4">Servicios</h2>
 
-        <article class="card my-3">
-            <div class="card-body">
-                <h3 class="card-title">Clases disponibles</h3>
-                <p class="card-text">
-                    Se realizan clases particulares de Matemáticas, Lenguaje, Ciencias e Historia,
-                    dirigidas a estudiantes de enseñanza básica y media.
-                </p>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <h3>Matemáticas</h3>
+                    <p>Refuerzo escolar y preparación para pruebas.</p>
+                </div>
             </div>
-        </article>
-    </section>
-
-    <!-- Sección 2 -->
-    <section id="metodologia" class="mb-5">
-        <h2>Metodología de Trabajo</h2>
-
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <ul>
-                    <li>Aprendizaje personalizado</li>
-                    <li>Refuerzo de contenidos escolares</li>
-                    <li>Preparación para pruebas</li>
-                    <li>Clases online y presenciales</li>
-                </ul>
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <h3>Lenguaje</h3>
+                    <p>Comprensión lectora y redacción.</p>
+                </div>
             </div>
-
-            <div class="col-md-6">
-                <img src="img.jpg"
-                     class="img-fluid rounded"
-                     alt="Profesor realizando clases particulares">
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <h3>Ciencias</h3>
+                    <p>Apoyo personalizado según el nivel.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección 3 -->
+    <section id="metodologia">
+        <h2 class="mb-4">Metodología</h2>
+        <ul class="fs-5">
+            <li>Clases personalizadas</li>
+            <li>Atención individual</li>
+            <li>Modalidad online y presencial</li>
+            <li>Horarios flexibles</li>
+        </ul>
+    </section>
+
     <section id="contacto">
-        <h2>Contacto</h2>
+        <h2 class="mb-4">Contacto</h2>
 
-        <!-- Código sugerido por IA (GitHub Copilot) -->
-        <form class="mt-3">
-
+        <form>
             <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" id="nombre" class="form-control" required>
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" required>
             </div>
 
             <div class="mb-3">
-                <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" id="correo" class="form-control" required>
+                <label class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" required>
             </div>
 
             <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea id="mensaje" class="form-control" rows="4"></textarea>
+                <label class="form-label">Mensaje</label>
+                <textarea class="form-control" rows="4"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">
-                Enviar mensaje
-            </button>
+            <button type="submit" class="btn btn-form">Enviar mensaje</button>
         </form>
+
+        <!-- BOTONES DE REDES SOCIALES (TEXTO) -->
+        <div class="social-buttons mt-4">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://wa.me/56900000000" target="_blank">WhatsApp</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
     </section>
 
 </main>
 
-<footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">© 2026 Clases Particulares | Proyecto académico</p>
+<footer>
+    <p>© 2026 Clases Particulares | Proyecto Académico Fernando Saavedra</p>
 </footer>
 
 </body>

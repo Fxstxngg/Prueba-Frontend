@@ -1,33 +1,130 @@
-/*eva1 para modificados*/
+:root {
+    --c-oscuro: #042940;
+    --c-principal: #005C53;
+    --c-acento: #9FC131;
+    --c-hover: #DBF227;
+    --c-suave: #D6D58E;
+}
 
+/* GENERAL */
 body {
+    background-color: var(--c-oscuro);
+    color: var(--c-suave);
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
 }
 
-.h1_principal{
-    color: white;
+/* NAVBAR */
+.navbar-custom {
+    background-color: var(--c-principal);
 }
 
-h1, h2, h3 {
-    color: #0d6efd;
+.nav-btn {
+    color: var(--c-suave);
+    margin-left: 12px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
+.nav-btn:hover {
+    background-color: var(--c-acento);
+    color: var(--c-oscuro);
+    transform: translateY(-4px) scale(1.08);
+}
+
+/* HEADER */
+.header {
+    background-color: var(--c-principal);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    color: var(--c-hover);
+}
+
+/* SECCIONES */
 section {
-    padding: 20px;
+    background-color: var(--c-principal);
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
 }
 
-ul {
-    padding-left: 20px;
+/* CARDS */
+.card {
+    background-color: var(--c-suave);
+    color: var(--c-oscuro);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* FORMULARIO */
+form {
+    background-color: var(--c-suave);
+    padding: 30px;
+    border-radius: 25px;
+    color: var(--c-oscuro);
+}
+
+.form-control {
+    border-radius: 15px;
+    border: 2px solid var(--c-principal);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--c-acento);
+    box-shadow: 0 0 12px rgba(159,193,49,0.6);
+}
+
+.btn-form {
+    background-color: var(--c-acento);
+    color: var(--c-oscuro);
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-form:hover {
+    background-color: var(--c-hover);
+    transform: scale(1.12);
+}
+
+/* BOTONES REDES SOCIALES (TEXTO) */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-buttons a {
+    background-color: var(--c-acento);
+    color: var(--c-oscuro);
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.35s ease;
+}
+
+.social-buttons a:hover {
+    background-color: var(--c-hover);
+    transform: translateY(-4px) scale(1.08);
+}
+
+/* FOOTER */
 footer {
-    font-size: 14px;
-}
-
-/* Diseño responsivo básico */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 24px;
-    }
+    background-color: var(--c-principal);
+    color: var(--c-suave);
+    text-align: center;
+    padding: 15px;
 }
