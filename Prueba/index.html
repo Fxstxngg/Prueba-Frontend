@@ -5,15 +5,15 @@
     <title>Clases Particulares</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap local -->
+    <!--Bootstrap local-->
     <link rel="stylesheet" href="bootstrap.min.css">
-
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<!--Le solicité a la IA que cree una barra de navegación interactivas que al pasar el mouse encima se cambie de color
+y tenga el efecto hover, además que al presionarlo baje a su área respectiva dentro de la página-->
 <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
         <span class="navbar-brand fw-bold text-light">Clases Particulares</span>
@@ -31,17 +31,21 @@
         </ul>
     </div>
 </nav>
-
+<!--Un título llamativo usando la clase "header" para que se vea mejor-->
 <header class="header">
     <h1>Clases Particulares</h1>
     <p>Aprende a tu ritmo con apoyo personalizado</p>
 </header>
 
-<main class="container my-5">
 
+<!-- Se usa la clase container para centrar el contenido y limitar el ancho según Bootstrap, además de my-5
+para agregar margen vertical y para separar visualmente el main del resto de la página-->
+
+<main class="container my-5">
+<!--Se crea la seccion servicios mostrando los servicios ofrecidos-->
     <section id="servicios">
         <h2 class="mb-4">Servicios</h2>
-
+<!--Se usan distintos div para dividir mejor los servicios ofrecidos y hacerlo mas amigable para el usuario.-->
         <div class="row">
             <div class="col-md-4 mb-3">
                 <div class="card p-3">
@@ -63,7 +67,7 @@
             </div>
         </div>
     </section>
-
+<!--Se crea la sección metodología para mostrar como se opera con el servicio ofrecido -->
     <section id="metodologia">
         <h2 class="mb-4">Metodología</h2>
         <ul class="fs-5">
@@ -73,10 +77,11 @@
             <li>Horarios flexibles</li>
         </ul>
     </section>
-
+<!--Se crea la seccion contacto-->
     <section id="contacto">
         <h2 class="mb-4">Contacto</h2>
 
+<!--Se crea una seccion de formulario para que el usuario pueda solicitar su servicio, en este caso, clases privadas.-->
         <form>
             <div class="mb-3">
                 <label class="form-label">Nombre</label>
@@ -96,7 +101,7 @@
             <button type="submit" class="btn btn-form">Enviar mensaje</button>
         </form>
 
-        <!-- BOTONES DE REDES SOCIALES (TEXTO) -->
+<!-- Agregué unos botones de redes sociales como extra para la seccion de contacto.-->
         <div class="social-buttons mt-4">
             <a href="https://instagram.com" target="_blank">Instagram</a>
             <a href="https://wa.me/56900000000" target="_blank">WhatsApp</a>
@@ -106,6 +111,7 @@
 
 </main>
 
+<!--Pie de página.-->
 <footer>
     <p>© 2026 Clases Particulares | Proyecto Académico Fernando Saavedra</p>
 </footer>
